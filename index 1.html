@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Follow Us | Skill Development Initiative</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: radial-gradient(circle at top left, #00416a, #e4e5e6);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      position: relative;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      padding: 50px 70px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      border: 2px solid transparent;
+      background-clip: padding-box;
+      margin-bottom: 50px;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      padding: 2px;
+      background: linear-gradient(135deg, #00c6ff, #0072ff, #ff00cc, #3333ff);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none; /* 🟢 FIX: allow clicks through overlay */
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 40px;
+      color: #e0e0e0;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .social-links a {
+      color: white;
+      font-size: 35px;
+      transition: all 0.3s ease;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid white;
+      text-decoration: none;
+      cursor: pointer;
+      z-index: 1; /* ensure above overlay */
+      position: relative;
+    }
+
+    .social-links a:hover {
+      background: white;
+      color: #0072ff;
+      transform: scale(1.15);
+      box-shadow: 0 0 15px rgba(255,255,255,0.4);
+    }
+
+    footer {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #ddd;
+      text-align: center;
+      width: 100%;
+      position: static;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      .social-links a {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Follow Us On</h1>
+    <p>Stay connected with Skill Development & Opportunities</p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/19xVVwmsvV/" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/skill_tripura_official_?igsh=cHd2dGhrZ2Ewcjgw" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://x.com/TSDM_2015?t=CjWAiw5zIZUwriNupo0O4w&s=09" target="_blank" title="Twitter (X)">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+    </div>
+  </div>
+
+  <footer>© 2025 Skill Development Initiative | All Rights Reserved</footer>
+</body>
+</html>
